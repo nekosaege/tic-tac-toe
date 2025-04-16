@@ -92,3 +92,5 @@ class TicTacToe {
 }
 
 const game = new TicTacToe();
+let myAudio = document.querySelector('#audio')
+myAudio.play()
