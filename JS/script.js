@@ -31,6 +31,7 @@ class TicTacToe {
         this.resetButton.addEventListener('click', () => this.resetGame());
         this.statusText.textContent = `${this.currentPlayer} の番です`;
         this.running = true;
+        
     }
 
     cellClicked(cell) {
@@ -43,6 +44,7 @@ class TicTacToe {
         this.updateCell(cell, cellIndex);
         this.checkWinner();
     }
+    
 
     updateCell(cell, index) {
         this.options[index] = this.currentPlayer;
@@ -92,5 +94,3 @@ class TicTacToe {
 }
 
 const game = new TicTacToe();
-let myAudio = document.querySelector('#audio')
-myAudio.play()
